@@ -194,7 +194,7 @@ contract SupplyChain {
     // Emit the appropriate event
     
   }
-
+ 
   // Define a function 'packItem' that allows a farmer to mark an item 'Packed'
   function packItem(uint _upc) public {
   // Call modifier to check if upc has passed previous supply chain stage
