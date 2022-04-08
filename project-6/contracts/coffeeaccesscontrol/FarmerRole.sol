@@ -1,4 +1,5 @@
-pragma solidity ^0.4.24;
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.24;
 
 // Import the library 'Roles'
 import "./Roles.sol";
@@ -13,7 +14,7 @@ contract FarmerRole {
 
   // Define a struct 'farmers' by inheriting from 'Roles' library, struct Role
   Roles.Role private farmers;
-
+ 
   // In the constructor make the address that deploys this contract the 1st farmer
   constructor() public {
     _addFarmer(msg.sender);
